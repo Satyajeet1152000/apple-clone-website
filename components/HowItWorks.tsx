@@ -21,8 +21,9 @@ const HowItWorks = () => {
 			ease: 'power2.inOut'
 		})
 
-		animateWithGsap('.g_fadeIn', { opacity: 1, y: 0, duration: 1, ease: 'power2.inOut' })
+		animateWithGsap('.g_fadeIn', { y: 0, opacity: 1, ease: 'power2.inOut', duration: 1})
 	}, [])
+	
 	return (
 		<section className="common-padding">
 			<div className="screen-max-width">

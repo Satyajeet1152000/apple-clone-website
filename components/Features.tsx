@@ -19,7 +19,7 @@ const Features = () => {
             onComplete: () => {
                 if (videoRef.current) {
                     videoRef.current.play();
-                  }
+                }
             }
         })
         animateWithGsap('#features_title', { y: 0, opacity: 1 })
@@ -47,7 +47,6 @@ const Features = () => {
                                 <source src={exploreVideo} type='video/mp4'  />
                             </video>
                         </div>
-
                         <div className="flex flex-col w-full relative">
                             <div className="feature-video-container">
                                 <div className=' overflow-hidden flex-1 h-[50vh]'>
