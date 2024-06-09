@@ -41,9 +41,9 @@ const HowItWorks = () => {
 					</h2>
 				</div>
 				<div className="mt-10 md:mt-20 mb-14">
-					<div className="relative h-full flex-center">
+					<div className="relative h-full flex-center border">
 						<div className="overflow-hidden">
-							<Image src={frameImg} alt="frame" width={1000} height={1000} className=" bg-transparent relative z-10" />
+							<Image src={frameImg} alt="frame" width={1000} height={1000} className=" bg-transparent relative z-10 w-full" />
 						</div>
 						<div className="hiw-video">
 							<video className=" pointer-events-none" playsInline preload="none" muted autoPlay ref={videoRef}>
