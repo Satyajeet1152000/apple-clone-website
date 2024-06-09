@@ -23,9 +23,10 @@ const ModelView = ({ index, groupRef, gsapType, controlRef, setRotationState, it
                 ref={controlRef}
                 enableZoom={false}
                 enablePan={false}
-                rotateSpeed={0.4}
+                rotateSpeed={0.7}
                 target={new THREE.Vector3(0, 0, 0)}
                 onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}
+                autoRotate
             />
 
             <group ref={groupRef} name={`${index === 1} ? 'small' : 'large`} position={[0, 0, 0]}>

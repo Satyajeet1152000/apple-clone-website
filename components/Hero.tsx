@@ -5,25 +5,29 @@ import gsap from "gsap"
 import { useEffect, useState } from "react"
 
 const Hero = () => {
-  const [videoSrc, setVideoSrc] = useState(window.innerWidth < 700 ? smallHeroVideo: heroVideo)
+  const [videoSrc, setVideoSrc] = useState('');
 
   const handleVideoSrcSet = () => {
-    (window.innerWidth < 760)?setVideoSrc(smallHeroVideo):setVideoSrc(heroVideo)
-  }
+    if (window.innerWidth < 760) {
+      setVideoSrc(smallHeroVideo);
+    } else {
+      setVideoSrc(heroVideo);
+    }
+  };
 
   useEffect(() => {
+    handleVideoSrcSet();
     window.addEventListener('resize', handleVideoSrcSet);
-    
     return () => {
       window.removeEventListener('resize', handleVideoSrcSet);
-    }
-  }, [])
-  
-  useGSAP(()=>{
-    gsap.to('#hero', { opacity: 1, delay: 2 })
-    gsap.to('#cta', { opacity: 1, y:-50, delay: 2 })
+    };
+  }, []);
 
-  },[])
+  useGSAP(() => {
+    gsap.to('#hero', { opacity: 1, delay: 2 })
+    gsap.to('#cta', { opacity: 1, y: -50, delay: 2 })
+
+  }, [])
 
   return (
     <section className='w-full nav-height bg-black relative'>
@@ -31,7 +35,7 @@ const Hero = () => {
         <p id="hero" className='hero-title'>iPhone 15 pro</p>
         <div className=" md:w-10/12 w-9/12">
           <video autoPlay muted playsInline={true} key={videoSrc} className=" pointer-events-none">
-            <source src={videoSrc} type="video/mp4"/>
+            <source src={videoSrc} type="video/mp4" />
           </video>
         </div>
       </div>
