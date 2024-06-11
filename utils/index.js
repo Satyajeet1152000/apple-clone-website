@@ -2,6 +2,7 @@
 
 export const heroImg = "/assets/images/hero.jpeg";
 
+export const appleHueVideo = "/assets/videos/appleHueRotate.mp4";
 export const heroVideo = "/assets/videos/hero.mp4";
 export const smallHeroVideo = "/assets/videos/smallHero.mp4";
 export const highlightFirstVideo = "/assets/videos/highlight-first.mp4";
@@ -19,6 +20,41 @@ export const rightImg = "/assets/images/right.svg";
 export const replayImg = "/assets/images/replay.svg";
 export const playImg = "/assets/images/play.svg";
 export const pauseImg = "/assets/images/pause.svg";
+export const introAiImgs = [
+    "/assets/images/hero/ai_1.png",
+    "/assets/images/hero/ai_2.png",
+    "/assets/images/hero/ai_3.png",
+    "/assets/images/hero/ai_4.png",
+    "/assets/images/hero/ai_5.png",
+];
+export const iOS18Imgs = [
+    "/assets/images/hero/ios18_1.png",
+    "/assets/images/hero/ios18_2.png",
+    "/assets/images/hero/ios18_3.png",
+    "/assets/images/hero/ios18_4.png",
+    "/assets/images/hero/ios18_5.png",
+];
+export const iPadOS18Imgs = [
+    "/assets/images/hero/ipados_1.png",
+    "/assets/images/hero/ipados_2.png",
+    "/assets/images/hero/ipados_3.png",
+    "/assets/images/hero/ipados_4.png",
+];
+export const macOSImgs = [
+    "/assets/images/hero/macos_1.png",
+    "/assets/images/hero/macos_2.png",
+    "/assets/images/hero/macos_3.png",
+];
+export const watchOSImgs = [
+    "/assets/images/hero/watchos_watch_1.png",
+    "/assets/images/hero/watchos_watch_2.png",
+    "/assets/images/hero/watchos_watch_3.png",
+    "/assets/images/hero/watchos_watch_4.png",
+    "/assets/images/hero/watchos_watch_5.png",
+];    
+export const visionOSImg = "/assets/images/hero/visionos.jpg"
+
+
 
 export const yellowImg = "/assets/images/yellow.jpg";
 export const blueImg = "/assets/images/blue.jpg";
