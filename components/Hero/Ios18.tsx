@@ -1,7 +1,7 @@
 import { iOS18Imgs } from '@/utils'
 import Image from 'next/image'
 import React from 'react'
-import ExploreBtn from './ExploreBtn'
+import Button from '../Button'
 import HeadingText from './HeadingText'
 import Heading from './Heading'
 
@@ -11,9 +11,9 @@ const Ios18 = () => {
             <div className='flex-center flex-col gap-y-5'>
                 <Heading text='iOS 18' className='from-red-700 to-sky-800' />
                 <HeadingText text='Customize your iPhone in more ways than ever, stay connected with friends and family, and relive your favorite moments. And with Apple Intelligence, the things you do every day become even more magical.' />
-                <ExploreBtn  text='Explore the preview' />
+                <Button  text='Explore the preview' />
             </div>
-            <div className='flex items-center justify-center gap-x-5 w-full'>
+            <div className='flex-center gap-x-5 w-full'>
             {iOS18Imgs.map((imgSrc, i)=>(
                 <Image
                     key={i}

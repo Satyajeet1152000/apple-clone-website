@@ -1,7 +1,7 @@
 import React from 'react'
 import Heading from './Heading'
 import HeadingText from './HeadingText'
-import ExploreBtn from './ExploreBtn'
+import Button from '../Button'
 import Image from 'next/image'
 import { visionOSImg } from '@/utils'
 
@@ -12,7 +12,7 @@ const VisionOS = () => {
                 <Heading text='visionOS 2' className=' from-red-800 via-purple-600 to-sky-700' />
                 <HeadingText text='Relive and share photos in magical new ways. Immerse yourself in entertainment and work. Navigate easily with new gestures. The groundbreaking experiences of Apple Vision Pro go even further.'
                 />
-                <ExploreBtn text='Explore the preview' />
+                <Button text='Explore the preview' />
             </div>
             <div className='flex justify-center items-center'>
                 <Image

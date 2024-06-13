@@ -1,7 +1,7 @@
 import { iPadOS18Imgs } from '@/utils'
 import Image from 'next/image'
 import React from 'react'
-import ExploreBtn from './ExploreBtn'
+import Button from '../Button'
 import HeadingText from './HeadingText'
 import Heading from './Heading'
 
@@ -14,9 +14,9 @@ const IpadOS = () => {
                 <Heading text='iPadOS 18' className='from-sky-500 via-sky-800 to-purple-400' />
                 <HeadingText text='Explore new ways to work with Apple Pencil, discover new experiences in apps, and customize iPad even further. And bring your ideas to life like never before with Apple Intelligence.'
                 />
-                <ExploreBtn text='Explore the preview' />
+                <Button text='Explore the preview' />
             </div>
-            <div className='flex items-center justify-center gap-x-5 mt-5'>
+            <div className='flex-center gap-x-5 mt-5'>
                 <div>
                     <Image
                         src={iPadOS18Imgs[0]}

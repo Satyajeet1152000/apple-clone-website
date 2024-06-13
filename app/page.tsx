@@ -14,7 +14,6 @@ export default function Home() {
       <Model/>
       <Features/>
       <HowItWorks/> */}
-      <Footer/>
     </main>
   );
 }

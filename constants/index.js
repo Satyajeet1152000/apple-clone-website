@@ -11,7 +11,7 @@ import {
   
   export const navLists = [
     {
-      main: {name: "Store", href:""},
+      main: {name: "Store", href:"/store"},
       sub: {
         "Shop": [
           {name: "Shop the Latest", href: ""},

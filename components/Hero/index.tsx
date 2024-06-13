@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Introducing from './Introducing'
 import Ios18 from './Ios18'
 import IpadOS from './IpadOS'
-import ExploreBtn from './ExploreBtn'
 import MacOS from './MacOS'
 import WatchOS11 from './WatchOS11'
 import VisionOS from './VisionOS'
@@ -11,7 +10,7 @@ import VisionOS from './VisionOS'
 const index = () => {
 	return (
 		<>
-			<section className=' bg-black flex-center flex-col h-[100vh]'>
+			<section className=' bg-black flex-center flex-col h-[100vh] text-white'>
 				<video autoPlay muted loop className='scale-95 -mt-5'>
 					<source src={appleHueVideo} />
 				</video>

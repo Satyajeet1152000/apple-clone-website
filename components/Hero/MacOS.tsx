@@ -1,7 +1,7 @@
 import React from 'react'
 import Heading from './Heading'
 import HeadingText from './HeadingText'
-import ExploreBtn from './ExploreBtn'
+import Button from '../Button'
 import Image from 'next/image'
 import { macOSImgs } from '@/utils'
 
@@ -12,9 +12,9 @@ const MacOS = () => {
                 <Heading text='macOS Sequoia' className=' from-sky-800 via-sky-600 to-orange-800' />
                 <HeadingText text='Lay out your workspace on the fly, browse the web with focus, and even use iPhone wirelessly. And Apple Intelligence helps you simplify and accelerate tasks big and small.'
                 />
-                <ExploreBtn text='Explore the preview' />
+                <Button text='Explore the preview' />
             </div>
-            <div className='flex items-center justify-center gap-x-5 mt-5 relative'>
+            <div className='flex-center gap-x-5 mt-5 relative'>
                 <div>
                     <Image
                         src={macOSImgs[0]}

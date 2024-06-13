@@ -24,7 +24,7 @@ const Footer = () => {
                 <div className='border-t-[1px] border-gray-400 w-full my-5'></div>
                 <div className=' columns-5'>
                     {Object.keys(footerLinksData).map((category: string, i: any) => (
-                        <div key={i} className='text-black font-medium flex flex-col break-inside-avoid gap-1 py-3'>
+                        <div key={i} className=' font-medium flex flex-col break-inside-avoid gap-1 py-3'>
                             {category}
                             {footerLinksData[category].map((item, i) => (
                                 <Link

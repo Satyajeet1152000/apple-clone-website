@@ -54,6 +54,10 @@ export const watchOSImgs = [
 ];    
 export const visionOSImg = "/assets/images/hero/visionos.jpg"
 
+export const storeImg = "/assets/images/store.svg"
+
+export const userImg = "/assets/images/user.jpg"
+
 
 
 export const yellowImg = "/assets/images/yellow.jpg";
