@@ -15,17 +15,5 @@ const config: Config = {
     },
   },
   plugins: [],
-  images: {
-    // remotePatterns: [
-    //   {
-    //     protocol: 'https',
-    //     hostname: 'store.storeimages.cdn-apple.com',
-    //     port: '',
-    //     pathname: "/"
-    //   },
-    // ],
-    // domains: ['store.storeimages.cdn-apple.com'] 
-  },
-  // reactStrictMode: true,
 };
 export default config;

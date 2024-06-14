@@ -48,67 +48,97 @@ export const topData = [
 export const theLatestData = [
     {
         imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-iphone-15-pro-202309?wid=800&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1692910040844",
+        h1: "Titanium",
         title: "iPhone 15 Pro",
         price: "$999",
-        monthlyInstallment: "$41.62/mo. for 24 months"
+        monthlyInstallment: "$41.62/mo. for 24 months",
+        color:"white",
     },
     {
         imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-vision-pro-202401?wid=800&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1705097770616",
+        h1: "Welcome to spatial computing.",
         title: "Apple Vision Pro",
         price: "$3499",
-        monthlyInstallment: "$291.58/mo. for 12 months"
+        monthlyInstallment: "$291.58/mo. for 12 months",
+        color:"black",
     },
     {
         imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-ipad-pro-202405?wid=800&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1713308272816",
+        h1: "Thinpossible.",
         title: "iPad Pro",
         price: "$999",
-        monthlyInstallment: "$83.25/mo. for 12 months"
+        monthlyInstallment: "$83.25/mo. for 12 months",
+        color:"white",
     },
     {
         imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-pride-202405?wid=800&amp;hei=1000&amp;fmt=jpeg&amp;qlt=95&amp;.v=1714472685718",
+        h1: "Let your light shine.",
         title: "Pride Edition Braided Solo Loop",
-        price: "$99"
+        price: "$99",
+        color:"white",
     },
     {
         imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-macbook-air-202402?wid=800&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1707259289595",
+        h1: "Designed to go places.",
         title: "MacBook Air",
         price: "$999",
-        monthlyInstallment: "$83.25/mo. for 12 months"
+        monthlyInstallment: "$83.25/mo. for 12 months",
+        color:"black",
     },
     {
         imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-ipad-air-202405?wid=800&amp;hei=1000&amp;fmt=jpeg&amp;qlt=95&amp;.v=1713308272877",
+        h1: "Fresh Air.",
         title: "iPad Air",
         price: "$599",
-        monthlyInstallment: "$49.91/mo. for 12 months"
+        monthlyInstallment: "$49.91/mo. for 12 months",
+        color:"black",
     },
     {
         imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-apple-pencil-202405?wid=800&amp;hei=1000&amp;fmt=png-alpha&amp;.v=1716327768944",
+        h1: "Engineered for limitless creativity. ",
         title: "Apple Pencil Pro",
-        price: "$129"
+        price: "$129",
+        color:"white",
     },
     {
         imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-watch-s9-202309?wid=800&amp;hei=1000&amp;fmt=jpeg&amp;qlt=95&amp;.v=1692720183508",
+        h1: "Smarter. Brighter. Mightier. ",
         title: "Apple Watch Series 9",
         price: "$399",
-        monthlyInstallment: "$33.25/mo. for 12 months"
+        monthlyInstallment: "$33.25/mo. for 12 months",
+        color:"white",
     },
     {
         imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-iphone-15-202309?wid=800&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1692719973220",
+        h1: "Newphoria",
         title: "iPhone 15",
         price: "$799",
-        monthlyInstallment: "$33.29/mo. for 24 months"
+        monthlyInstallment: "$33.29/mo. for 24 months",
+        color:"black",
     },
     {
         imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-watch-ultra-202309?wid=800&amp;hei=1000&amp;fmt=jpeg&amp;qlt=95&amp;.v=1692720471465",
+        h1: "Next level adventure.",
         title: "Apple Watch Ultra 2",
         price: "$799",
-        monthlyInstallment: "$66.58/mo. for 12 months"
+        monthlyInstallment: "$66.58/mo. for 12 months",
+        color:"black",
     },
     {
-        imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-macbook-pro-202402?wid=800&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1707259289640",
+        imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-macbook-pro-202310?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1696964122967",
+        h1: "Mind-blowing. <br>Head-turning. ",
         title: "MacBook Pro",
         price: "$1299",
-        monthlyInstallment: "$108.25/mo. for 12 months"
+        monthlyInstallment: "$108.25/mo. for 12 months",
+        color:"black",
+    },
+    {
+        imgSrc: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-watch-se-202403?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1708726161435",
+        h1: "A great deal to love. ",
+        title: "APPLE WATCH SE",
+        price: "$249",
+        monthlyInstallment: "$20.75/mo. for 12 months",
+        color:"black",
     }
 ]
 

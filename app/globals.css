@@ -35,6 +35,18 @@ canvas {
     @apply flex items-center justify-center
   }
 
+  @layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}
+
   .nav-height {
     @apply h-[calc(100vh-60px)]
   }
