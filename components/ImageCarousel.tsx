@@ -3,7 +3,7 @@ import React, { MutableRefObject, useEffect, useRef, useState } from "react";
 
 interface ImageCarouselProps {
     children: JSX.Element[];
-    margin: string;
+    margin: number;
 }
 
 const ImageCarousel = ({ children, margin }: ImageCarouselProps) => {
@@ -13,17 +13,22 @@ const ImageCarousel = ({ children, margin }: ImageCarouselProps) => {
 
 
     useEffect(() => {
-        const scrollPresence = cRef.current!.scrollWidth > cRef.current!.clientWidth;
-        setScrollPresence(scrollPresence)
-    }, [])
+        const checkScrollPresence = () => {
+            if (cRef.current) {
+                setScrollPresence(cRef.current.scrollWidth > cRef.current.clientWidth);
+            }
+        };
+
+        checkScrollPresence();
+        window.addEventListener('resize', checkScrollPresence);
+
+        return () => {
+            window.removeEventListener('resize', checkScrollPresence);
+        };
+    }, []);
 
     const scroll = (dir: number) => {
-
-
-
         const eleWidth = cRef.current!.scrollWidth / children.length
-
-
         const scrollOffset = eleWidth
         cRef.current!.scrollLeft += scrollOffset * dir;
     };
@@ -40,7 +45,7 @@ const ImageCarousel = ({ children, margin }: ImageCarouselProps) => {
 
             >
                 {children.map((child, index) => (
-                    <div key={index} className={`flex-none ${index === 0 ? `ml-${margin}` : index === children.length - 1 ? `mr-${margin}` : ''} `}>
+                    <div key={index} className={`flex-none ${ index===0?`ml-${margin}`: ""} ${index===children.length-1? `mr-${margin}`: ""} `}>
                         {child}
                     </div>
                 ))}
