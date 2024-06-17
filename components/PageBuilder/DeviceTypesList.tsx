@@ -7,10 +7,10 @@ const DeviceTypesList = ({data}:{data:any}) => {
             <ImageCarousel margin={0}>
                 {data.map((d:any, i:number) => (
                     <div key={i} className='px-3 hover:scale-105 ease-linear duration-75'>
-                        <div className='h-24 w-24'>
-                            <Image src={d.imgSrc} alt={`TopDataImage${i}`} className='h-[100%] w-[100%]' width={80} height={80} />
+                        <div className='h-20 w-20'>
+                            <Image src={d.imgSrc} alt={`TopDataImage${i}`} className='h-[100%] w-[100%]' width={60} height={60} />
                         </div>
-                        <h1 className='flex-center w-full'>{d.title}</h1>
+                        <h1 className='text-center w-full'>{d.title}</h1>
                     </div>
                 ))}
             </ImageCarousel>
