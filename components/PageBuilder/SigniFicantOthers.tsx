@@ -24,7 +24,7 @@ const SigniFicantOthers = ({ heading, data }: { heading: string, data: any }) =>
     return (
         <section className=' my-14'>
             <BnGText btext={heading} gtext='' classname=' mx-28 pb-16 font-semibold text-5xl' />
-            <div className='flex mx-[15%]'>
+            <div className='flex mx-[15%] '>
                 {/* text area */}
                 <div className=' flex flex-col w-[30%]'>
                     {data.map((d: any, i: number) => (
@@ -52,8 +52,8 @@ const SigniFicantOthers = ({ heading, data }: { heading: string, data: any }) =>
                     ))}
                 </div>
                 {/* Image Area */}
-                <div className='px-28'>
-                    <Image src={img} alt='image' width={1000} height={1000} />
+                <div className='px-28 '>
+                    <Image src={img} alt='image' width={1200} height={1000} />
                 </div>
             </div>
         </section>

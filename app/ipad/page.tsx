@@ -19,7 +19,7 @@ const page = () => {
             <ExploreLineup heading="Explore the lineup." data={exploreLineupData} style={exploreLineupDataStyle}/>
             <WhyAppleIsBest  heading="Why Apple is the best place to buy Mac."  data={whyAppleBestData}/>
             <SigniFicantOthers  heading="Significant others."  data={significantOtherData}/>
-            <Essentials  heading="Mac essentials."  data={macEssentialsData}/>
+            <Essentials  heading="iPad essentials."  data={macEssentialsData} updown={true}/>
         </>
     )
 }

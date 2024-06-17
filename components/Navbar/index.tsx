@@ -29,7 +29,7 @@ const Navbar = () => {
                                     key={i} 
                                     href={nav.main.href}
                                     className='px-5 text-sm cursor-pointer text-gray hover:text-white transition-all' 
-                                    onMouseEnter={()=> setLinkHover({hoverStatus: true, navSubData: nav.sub})}
+                                    onMouseEnter={()=> setLinkHover({hoverStatus: false, navSubData: nav.sub})}
                                 >
                                     {nav.main.name}
                                 </Link>
