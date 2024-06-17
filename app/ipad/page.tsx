@@ -15,9 +15,9 @@ const page = () => {
             <DeviceTypesList data={topData} />
             <Banner data={bannerDate} />
             <HeroVideo_Heading heading={headingData} videoSrc={introVideo} />
-            <GetToKnow heading= "Get to Know Mac." data={getToKnowData}/>
+            <GetToKnow heading= "Get to Know iPad." data={getToKnowData}/>
             <ExploreLineup heading="Explore the lineup." data={exploreLineupData} style={exploreLineupDataStyle}/>
-            <WhyAppleIsBest  heading="Why Apple is the best place to buy Mac."  data={whyAppleBestData}/>
+            <WhyAppleIsBest  heading="Why Apple is the best place to buy iPad."  data={whyAppleBestData}/>
             <SigniFicantOthers  heading="Significant others."  data={significantOtherData}/>
             <Essentials  heading="iPad essentials."  data={macEssentialsData} updown={true}/>
         </>

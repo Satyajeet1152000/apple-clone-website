@@ -143,6 +143,14 @@ const ExploreLineup = ({ heading, data, style }: { heading: string, data: any, s
                                             <br /> battery life
                                         </h1>
                                     }
+                                    {/* iphone Battery */}
+                                    {d?.ibattery &&
+                                        <div className='flex-center flex-col h-26 w-full pt-3'>
+                                            <Image src={d.ibattery.imgSrc} alt='camera' width={50} height={50} />
+                                            <h1 className='text-sm'>{d.ibattery.info}</h1>
+                                        </div>
+                                    }
+
                                     {/* ports */}
                                     {d.ports &&
                                         <h1 className=' text-sm h-26 w-full pt-3'>

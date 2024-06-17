@@ -12,7 +12,7 @@ const Essentials = ({ heading, data, updown }: { heading: string, data: any, upd
                     {data.map((d: any, index: number) => (
                         <>
                         {!updown?
-                            <div key={index} className='mx-10 flex-center flex-col'>
+                            <div key={index} className='gap-10 flex-center flex-col'>
                                 <div className="flex-center flex-col w-full h-32">
                                     <h1 className=' text-3xl font-semibold'>{d.title}</h1>
                                     <h1 className=''>{d.description}</h1>
@@ -34,7 +34,7 @@ const Essentials = ({ heading, data, updown }: { heading: string, data: any, upd
                             :
                             <>
                             {index%2 === 0 ?
-                                <div key={index} className='mx-10 flex-center flex-col'>
+                                <div key={index} className='gap-10 flex-center flex-col'>
                                     <div className="flex-center flex-col w-full h-32">
                                         <h1 className=' text-3xl font-semibold'>{d.title}</h1>
                                         <h1 className=''>{d.description}</h1>
@@ -54,7 +54,7 @@ const Essentials = ({ heading, data, updown }: { heading: string, data: any, upd
                                     />
                                 </div>
                                 :
-                                <div key={index} className='mx-10 flex-center flex-col'>
+                                <div key={index} className='gap-10 flex-center flex-col'>
                                     <Image 
                                         src={d.imgSrc} 
                                         alt={`section${index}_image`}
