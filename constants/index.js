@@ -14,12 +14,12 @@ import {
       main: {name: "Store", href:"/store"},
       sub: {
         "Shop": [
-          {name: "Shop the Latest", href: ""},
-          {name: "Mac", href: ""}, 
-          {name: "iPad", href: ""}, 
-          {name: "iPhone", href: ""}, 
-          {name: "Apple Watch", href: ""}, 
-          {name: "Apple Vision Pro", href: ""},
+          {name: "Shop the Latest", href: "/store"},
+          {name: "Mac", href: "/store/buy-mac"}, 
+          {name: "iPad", href: "/store/buy-ipad"}, 
+          {name: "iPhone", href: "/store/buy-iphone"}, 
+          {name: "Apple Watch", href: "/store/buy-watch"}, 
+          {name: "Apple Vision Pro", href: "/store/buy-vision"},
           {name: "Accessories", href: ""},
         ],
         "Quick Links": [
@@ -38,7 +38,7 @@ import {
       }
     }, 
     {
-      main: {name:"Mac", href: ""},
+      main: {name:"Mac", href: "/mac"},
       sub: {
         "Eplore Mac":[
           {name: "Explore All Mac", href:""},
@@ -69,7 +69,7 @@ import {
       }
     }, 
     {
-      main: {name:"iPad", href: ""},
+      main: {name:"iPad", href: "/ipad"},
       sub: {
         "Explore iPad":[
           {name: "Explore All iPad", href:""},
@@ -97,7 +97,7 @@ import {
       }
     }, 
     {
-      main: {name:"iPhone", href: ""},
+      main: {name:"iPhone", href: "/iphone"},
       sub: {
         "Explore iPhone":[
           {name: "Explore All iPhone", href:""},
@@ -127,7 +127,7 @@ import {
       }
     }, 
     {
-      main: {name:"Watch", href: ""},
+      main: {name:"Watch", href: "/watch"},
       sub: {
         "Explore Watch":[
           {name: "Explore All Apple Watch", href:""},
@@ -155,7 +155,7 @@ import {
       }
     }, 
     {
-      main: {name:"Vision", href: ""},
+      main: {name:"Vision", href: "/vision"},
       sub: {
         "Explore Vision":[
           {name: "Explore Apple Vision Pro", href:""},
@@ -173,7 +173,7 @@ import {
       }
     }, 
     {
-      main: {name:"AirPods", href: ""},
+      main: {name:"AirPods", href: "/airpods"},
       sub: {
         "Explore Airpods":[
           {name: "Explore All AirPods", href:""},
@@ -194,7 +194,7 @@ import {
       }
     }, 
     {
-      main: {name:"Tv & Home", href: ""},
+      main: {name:"Tv & Home", href: "/tv"},
       sub: {
         "Explore TV & Home":[
           {name: "Explore TV & Home", href:""},
@@ -223,7 +223,7 @@ import {
       }
     }, 
     {
-      main: {name:"Entertainment", href: ""},
+      main: {name:"Entertainment", href: "/entertainment"},
       sub: {
         "Explore Entertainment":[
           {name: "Explore Entertainment", href:""},

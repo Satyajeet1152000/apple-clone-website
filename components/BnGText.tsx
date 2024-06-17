@@ -1,4 +1,4 @@
-const BnGText = ({ btext, gtext, classname }: { btext: string, gtext?: string, classname?:any }) => {
+const BnGText = ({ btext, gtext, classname }: { btext: string | undefined, gtext?: string, classname?:any }) => {
     return (
         <h1 className={classname}>
             {btext}

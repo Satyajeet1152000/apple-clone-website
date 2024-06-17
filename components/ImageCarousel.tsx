@@ -6,10 +6,13 @@ interface ImageCarouselProps {
     margin: number;
 }
 
-const ImageCarousel = ({ children, margin }: ImageCarouselProps) => {
+const ImageCarousel = ({ children, margin=24 }: ImageCarouselProps) => {
     const [buttonVisible, setButtonVisible] = useState(false)
     const [scrollPresence, setScrollPresence] = useState(false)
     const cRef: MutableRefObject<HTMLDivElement | null> = useRef(null)
+
+    const mLeft = "ml-24"
+    const mRight = "mr-24"
 
 
     useEffect(() => {
@@ -45,7 +48,8 @@ const ImageCarousel = ({ children, margin }: ImageCarouselProps) => {
 
             >
                 {children.map((child, index) => (
-                    <div key={index} className={`flex-none ${ index===0?`ml-${margin}`: ""} ${index===children.length-1? `mr-${margin}`: ""} `}>
+                    // <div key={index} className={`flex-none ${ index===0?`ml-${margin}`: ""} ${index===children.length-1? `mr-${margin}`: ""} `}>
+                    <div key={index} className={`flex-none ${index===0 ? mLeft : ""} ${index===(children.length-1)? mRight: ""}`} >
                         {child}
                     </div>
                 ))}

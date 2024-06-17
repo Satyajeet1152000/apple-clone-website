@@ -11,7 +11,7 @@ const page = () => {
             <section className='mx-28 pb-16'>
                 <ImageCarousel margin={0}>
                     {topData.map((data, i) => (
-                        <div key={i} className='flex-center flex-col font-medium hover:scale-105'>
+                        <div key={i} className='flex-center flex-col font-medium hover:scale-105 transition-all ease-linear'>
                             <Image src={data.imgPath} alt={`TopDataImage${i}`} width={150} height={100} />
                             <h1>{data.title}</h1>
                         </div>
