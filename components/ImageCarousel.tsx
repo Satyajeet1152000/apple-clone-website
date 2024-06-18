@@ -37,10 +37,10 @@ const ImageCarousel = ({ children, margin=24 }: ImageCarouselProps) => {
     };
 
     return (
-        <div className="flex-center relative">
+        <div className="flex-center relative ">
             <div
                 ref={cRef}
-                className='flex overflow-x-scroll scroll-smooth'
+                className='flex overflow-x-scroll scroll-smooth  w-full justify-between'
                 style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 onMouseEnter={() => setButtonVisible(true)}
                 onMouseLeave={() => setButtonVisible(false)}

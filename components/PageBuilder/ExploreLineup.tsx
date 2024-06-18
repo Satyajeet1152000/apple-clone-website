@@ -53,10 +53,25 @@ const ExploreLineup = ({ heading, data, style }: { heading: string, data: any, s
                                     {/* Gray Line */}
                                     <div className='h-[2px] w-[100%] bg-gray-300 my-5'></div>
 
+                                    {/* Apple Watch Case  */}
+                                    {d.case && 
+                                        <div className=' w-full'>
+                                            <div className='w-full flex-center relative h-16'>
+                                                <Image src={d.case.imgSrc} alt='chip' layout='fill' objectFit='contain'/>
+                                            </div>
+                                            <h1 className='text-sm'>{d.case.info}</h1>
+                                        </div>
+                                    }
+                                
                                     {/* Display infos */}
                                     {d.display && 
                                         <>
                                             <div className='w-full'>
+                                                {d.display.imgSrc &&
+                                                    <div className='w-full flex-center relative h-16'>
+                                                        <Image src={d.display.imgSrc} alt='chip' layout='fill' objectFit='contain'/>
+                                                    </div>
+                                                }
                                                 {d.display.size && <h1 className='font-medium text-2xl'>{d.display.size}</h1>}
                                                 {d.display.info && <h1 className='text-sm'>{d.display.info}</h1>}
                                             </div>
@@ -143,6 +158,15 @@ const ExploreLineup = ({ heading, data, style }: { heading: string, data: any, s
                                             <br /> battery life
                                         </h1>
                                     }
+
+                                    {/* Apple Watch Sensors */}
+                                    {d?.sensors &&
+                                        <div className='flex-center flex-col h-26 w-full pt-3'>
+                                            <Image src={d.sensors.imgSrc} alt='camera' width={50} height={50} />
+                                            <h1 className='text-sm'>{d.sensors.info}</h1>
+                                        </div>
+                                    }
+
                                     {/* iphone Battery */}
                                     {d?.ibattery &&
                                         <div className='flex-center flex-col h-26 w-full pt-3'>

@@ -31,7 +31,7 @@ const SigniFicantOthers = ({ heading, data }: { heading: string, data: any }) =>
                         <>
                             <button 
                                 key={i}
-                                className={`flex items-center justify-between px-3 py-4 text-2xl font-semibold text-nowrap ${btnStatus[i]?"":""}`}
+                                className={`flex items-center justify-between text-left px-3 py-4 text-2xl font-semibold text-nowrap ${btnStatus[i]?"":""}`}
                                 onClick={()=>handleButton(i)}
                             >
                                 {d.title}

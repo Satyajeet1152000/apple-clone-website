@@ -133,118 +133,90 @@ export const exploreLineupDataStyle = {
 
 export const exploreLineupData = [
     {
-        imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_15_pro__bpnjhcrxofqu_xlarge.png",
-        colors: ["#bab4a9", "#3d4555", "#f2f1eb", "#3f4042"],
+        imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_se__frx4hb13romm_medium.png",
+        colors: ["#1a242f", "#ded6d1", "#e0e0e0"],
         model: {
-            name: "iPhone 15 Pro",
-            info: "The ultimate iPhone.",
+            name: "Apple Watch SE",
+            info: <span>All the essentials.<br/>Light on price.</span>,
         },
-        price: "From $999 or $41.62/mo. for 12 mo.",
-        cameraInfo: [
-            {
-                imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_15_pro_camera__cmmp7qw3bkia_large.png",
-                info: <span>Pro camera system <br/>Our most advanced 48MP Main camera<br/>3x or 5x Telephoto camera <br/>Ultra Wide camera</span> 
-            },
-        ],
+        price: "From $249 or $20.75/mo. for 12 mo.*",
+        case: {
+            imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case_sizes__frpc80tcj9me_large.png",
+            info: <span>44mm or 40mm<br/>aluminum case</span>
+        },
+        display: {
+            imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case_fill__fszn2l29zuy6_large.png",
+            info: <span>Retina display<br/>up to 1000 nits</span>,
+        },
         chip: {
-            imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a17_pro__dpmksmevf1m6_large.png",
-            info: "A17 Pro chip with 6-core GPU",
+            imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_chip_s8__1dfxw5yx25u2_large.png",
+            info: <span>S8 SiP<br/> - <br/>Siri<br/>Find iPhone</span>,
+        },
+        sensors:{
+            imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_heart__d3nput42we0y_large.png",
+            info: <span> - <br/>High and low heart rate notifications<br/>Irregular rhythm notifications5<br/>Low cardio fitness notifications</span>
         },
         ibattery: {
-            imgSrc:"https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png",
-            info: "Up to 29 hours video playback."
+            imgSrc:"https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_battery__cf9dxpv3s9iu_large.png",
+            info: <span>Up to 18 hours<br/>Low Power Mode<br/> - </span>,
         },
     },
     {
-        imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_15__fm75iyqlkjau_xlarge.png",
-        colors: ["#ebd0d2", "#ece6c6", "#ced8c8", "#d5dde0", "#3c4042"],
+        imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_s9__b8uw2qgcgw1y_medium.png",
+        colors: ["#1a2530", "#ded6d1", "#e0e0e0","#fadcde", "#d61139", "#3e3a36", "#e6e6e7", "#d4bda1"],
         model: {
-            name: "iPhone 15",
-            info: "A total powerhouse.",
+            name: "Apple Watch Series 9",
+            info: <span>Powerful sensors,<br/>advanced health features.</span>,
         },
-        price: "From $799 or $33.29/mo. for 24 mo.",
-        cameraInfo: [
-            {
-                imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_15_camera__ua2m41hu16qe_large.png",
-                info: <span>Advanced dual-camera system <br/>48MP Main camera<br/>2x Telephoto camera <br/>Ultra Wide camera</span> 
-            },
-        ],
+        price: "From $399 or $33.25/mo. for 12 mo.",
+        case: {
+            imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case_sizes__frpc80tcj9me_large.png",
+            info: <span>45mm or 41mm<br/>aluminum or stainless steel case</span>
+        },
+        display: {
+            imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case_fill__fszn2l29zuy6_large.png",
+            info: <span>Always-On Retina display<br/>up to 2000 nits</span>,
+        },
         chip: {
-            imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a16__fo5o85ip3dui_large.png",
-            info: "A16 Bionic chip with 5-core GPU",
+            imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_chip_s9_fill__bp2ck2cja6s2_large.png",
+            info: <span>S9 SiP<br/>Double tap gesture<br/>Faster on-device Siri with health data access<br/>Precision Finding for iPhone17</span>,
+        },
+        sensors:{
+            imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_heart__d3nput42we0y_large.png",
+            info: <span> ECG App <br/>High and low heart rate notifications<br/>Irregular rhythm notifications5<br/>Low cardio fitness notifications</span>
         },
         ibattery: {
-            imgSrc:"https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png",
-            info: "Up to 26 hours video playback."
+            imgSrc:"https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_battery__cf9dxpv3s9iu_large.png",
+            info: <span>Up to 18 hours<br/>Up to 36 hours in Low Power Mode18<br/>Fast charging</span>,
         },
     },
     {
-        imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_14__cjgvgyn9cquu_xlarge.png",
-        colors: ["#a0b4c7", "#e6ddeb", "#f9e479", "#222930", "#faf6f2", "#fc0324",],
+        imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_u2__ebztafh9rvau_medium.png",
+        colors: ["#ccc4bc"],
         model: {
-            name: "iPhone 14",
-            info: "As amazing as ever.",
+            name: "Apple Watch Ultra 2",
+            info: <span>The More rugged<br/>and capable.</span>,
         },
-        price: "From $699 or $29.12/mo. for 24 mo.",
-        cameraInfo: [
-            {
-                imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_15_camera__ua2m41hu16qe_large.png",
-                info: <span>Dual-camera system <br/>12MP Main camera<br/> - <br/>Ultra Wide camera</span> 
-            },
-        ],
+        price: "From $799 or $66.58/mo. for 12 mo.",
+        case: {
+            imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case__fnvx2dhaljue_large.png",
+            info: <span>49mm<br/>titanium case</span>
+        },
+        display: {
+            imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_case_fill__fszn2l29zuy6_large.png",
+            info: <span>Always-On Retina display<br/>up to 3000 nits</span>,
+        },
         chip: {
-            imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png",
-            info: "A15 Bionic chip with 5-core GPU",
+            imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_chip_s9_fill__bp2ck2cja6s2_large.png",
+            info: <span>S9 SiP<br/>Double tap gesture<br/>Faster on-device Siri with health data access<br/>Precision Finding for iPhone17</span>,
+        },
+        sensors:{
+            imgSrc: "https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_heart__d3nput42we0y_large.png",
+            info: <span> ECG App <br/>High and low heart rate notifications<br/>Irregular rhythm notifications5<br/>Low cardio fitness notifications</span>
         },
         ibattery: {
-            imgSrc:"https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png",
-            info: "Up to 29 hours video playback."
-        },
-    },
-    {
-        imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_13__gnwdyqfq7i2y_xlarge.png",
-        colors: ["#394c38", "#faddd7", "#276787", "#232a31", "#f2f1eb", "#bf0013"],
-        model: {
-            name: "iPhone 13",
-            info: "All kinds of awesome.",
-        },
-        price: "From $599 or $24.62/mo. for 24 mo.",
-        cameraInfo: [
-            {
-                imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_15_camera__ua2m41hu16qe_large.png",
-                info: <span>Dual-camera system <br/>12MP Main camera<br/> - <br/>Ultra Wide camera</span> 
-            },
-        ],
-        chip: {
-            imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png",
-            info: "A15 Bionic chip with 5-core GPU",
-        },
-        ibattery: {
-            imgSrc:"https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png",
-            info: "Up to 19 hours video playback."
-        },
-    },
-    {
-        imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/iphone_se__gmvp19w01mum_xlarge.png",
-        colors: ["#232a31", "#f2f1eb", "#bf0013"],
-        model: {
-            name: "iPhone SE",
-            info: "Serious Power. Serious value.",
-        },
-        price: "From $429 or $17.87/mo. for 24 mo.",
-        cameraInfo: [
-            {
-                imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_iphone_se_camera__fjhchrid97e6_large.png",
-                info: <span>Single-camera system <br/>12MP Main camera<br/> - <br/> - </span> 
-            },
-        ],
-        chip: {
-            imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_a15__d6j18kowobgy_large.png",
-            info: "A15 Bionic chip with 5-core GPU",
-        },
-        ibattery: {
-            imgSrc:"https://www.apple.com/v/iphone/home/bu/images/overview/select/product_tile_icon_battery_100__ftljxec3ftui_large.png",
-            info: "Up to 15 hours video playback."
+            imgSrc:"https://www.apple.com/v/watch/bm/images/overview/select/product_tile_icon_battery__cf9dxpv3s9iu_large.png",
+            info: <span>Up to 36 hours<br/>Up to 72 hours in Low Power Mode18<br/>Fast charging</span>,
         },
     },
 ]
@@ -260,11 +232,6 @@ export const whyAppleBestData = [
         title: "Pay over time, interest‑free.",
         description: " When you choose to check out with Apple Card Monthly Installments.",
         imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/incentive/icon_apple_card__cj9bypegmr9e_large_2x.png"
-    },
-    {
-        title: <span>iPhone carrier deals.<br/>Right here at Apple..</span>,
-        description: "Includes trade‑in and carrier credits. AT&T: up to $700. T‑Mobile: up to $800. Verizon: up to $830.13",
-        imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/incentive/icon_carrier_deals__d5v3o5ugcjgy_large_2x.png"
     },
     {
         title: "Get flexible delivery and easy pickup.",
@@ -291,31 +258,31 @@ export const whyAppleBestData = [
 
 export const significantOtherData = [
     {
-        title: "iPhone and Mac",
-        description: "You can answer calls or messages from your iPhone directly on your Mac. Copy images, video, or text from your iPhone, then paste into another app on your nearby Mac. And with iCloud, you can access your favorite files from either your iPhone or Mac.",
-        imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/augment/mac__eo52ocrn8g02_large_2x.jpg"
+        title: <span>Apple Watch<br/> and iPhone</span>,
+        description: "Combining Apple Watch and iPhone opens up a world of features that make each device better. You can do things like get directions on iPhone and receive a tap on your wrist when it’s time to turn. Or set up a group photo on iPhone, then use your watch to see and snap the shot.",
+        imgSrc: "https://www.apple.com/v/watch/bm/images/overview/augment/accordion_watch_and_iphone__w7k178oumc2a_xlarge_2x.jpg"
     },
     {
-        title: "iPhone and Apple Watch",
-        description: "Misplaced your iPhone? The latest Apple Watch models can show you its approximate distance and direction.14 To set up a group photo on your iPhone, join the group and use Apple Watch as a viewfinder to snap the shot. And, when you take a call on your Apple Watch, just tap your iPhone to continue the conversation there.",
-        imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/augment/watch__c8ayb7bdtxme_large_2x.jpg"
+        title: <span>Apple Watch and<br/>Apple Fitness+</span>,
+        description: "Apple Watch supercharges your Fitness+ experience with real‑time, personalized metrics onscreen, like your heart rate, calories burned, and Activity rings.22 And you get the freedom of audio‑guided walks, runs, and meditations with just your watch and AirPods.",
+        imgSrc: "https://www.apple.com/v/watch/bm/images/overview/augment/accordion_watch_and_fitness_plus__cl6d6yhocppy_xlarge_2x.jpg"
     },
     {
-        title: "iPhone and AirPods",
-        description: "Set up AirPods on iPhone with just a tap. You’ll love Adaptive Audio, which automatically tailors the noise control to provide the best listening experience across different environments and interactions throughout the day.",
-        imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/augment/airpods__eb24cvhoe26a_large_2x.jpg"
+        title: <span>Apple Watch <br/>and AirPods</span>,
+        description: "You can do so much with just Apple Watch and AirPods. Together, they give you the power to take calls. Stream music and podcasts. Hear incoming notifications. They even let you respond to messages with Siri. You can do it all without your iPhone.",
+        imgSrc: "https://www.apple.com/v/watch/bm/images/overview/augment/accordion_watch_and_airpods__e3e8hxtmvzue_xlarge_2x.jpg"
     },
 ]
 
 export const macEssentialsData = [
     {
-        title: "MagSafe",
-        description: "Snap on a magnetic case, wallet, or both. And get fast, efficient wireless charging",
-        imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/essentials/magsafe__bfji5hb1mqsy_xlarge.jpg"
+        title: <span>Arm Candy. <br/> In all-new flavors.</span>,
+        description: "",
+        imgSrc: "https://www.apple.com/v/watch/bm/images/overview/essentials/banner_bands__fa2yj1435ia2_xlarge.jpg"
     },
     {
-        title: "AirTag",
-        description: "Attach one to your keys. Put another in your backpack. If they’re misplaced, just use the Find My",
-        imgSrc: "https://www.apple.com/v/iphone/home/bu/images/overview/essentials/airtag__b5lt0bcbd9ua_xlarge.jpg"
+        title: <span>Magic runs<br/>in the family</span>,
+        description: "Explore all AirPods models and find the best ones for you.",
+        imgSrc: "https://www.apple.com/v/watch/bm/images/overview/essentials/banner_airpods__bobqeod4vk1y_xlarge.jpg"
     },
 ]
