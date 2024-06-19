@@ -194,7 +194,7 @@ import {
       }
     }, 
     {
-      main: {name:"Tv & Home", href: "/tv"},
+      main: {name:"Tv & Home", href: "/tv-home"},
       sub: {
         "Explore TV & Home":[
           {name: "Explore TV & Home", href:""},
