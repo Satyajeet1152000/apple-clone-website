@@ -10,8 +10,8 @@ const footerLinksData = footerLinks as FooterLinksType;
 
 const Footer = () => {
     return (
-        <footer className=' py-5 sm:px-10 px-5 bg-white text-gray-600 flex-center flex-col text-sm'>
-            <div className=' w-[50%] border-black'>
+        <footer className='py-10 px-5 bg-white text-gray-600 flex-center flex-col text-sm'>
+            <div className=' w-[90%] border-black'>
                 <div className=' flex flex-col gap-3'>                    
                     <ol className=' list-decimal pl-5 flex flex-col gap-y-3'>
                         <li>Apple Intelligence will be available in beta on iPhone 15 Pro, iPhone 15 Pro Max, and iPad and Mac with M1 and later, with Siri and device language set to U.S. English, as part of iOS 18, iPadOS 18, and macOS Sequoia this fall.</li>
@@ -29,9 +29,9 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='border-t-[1px] border-gray-400 w-full my-5'></div>
-                <div className=' columns-5'>
+                <div className=' columns-2 md:columns-3 lg:columns-4 xl:columns-5'>
                     {Object.keys(footerLinksData).map((category: string, i: any) => (
-                        <div key={i} className=' font-medium flex flex-col break-inside-avoid gap-1 py-3'>
+                        <div key={i} className=' font-bold flex flex-col break-inside-avoid gap-1 py-3'>
                             {category}
                             {footerLinksData[category].map((item, i) => (
                                 <Link
@@ -51,7 +51,7 @@ const Footer = () => {
                 <div className='border-t-[1px] border-gray-400 w-full my-5'></div>
                 <div className=' flex justify-between'>
                     Copyright © 2024 Apple Inc. All rights reserved.
-                    <span className=' flex gap-x-3'>
+                    <span className=' flex gap-x-3 text-center'>
                         {[
                             { name: 'Privacy Policy', href: '' },
                             { name: 'Terms of Use', href: '' },

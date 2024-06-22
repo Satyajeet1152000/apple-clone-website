@@ -10,7 +10,7 @@ const Introducing = () => {
     const j = 3;
 
     return (
-        <section className='bg-white overflow-hidden text-[3vmin] flex items-center justify-between flex-col h-[100vh] py-10'>
+        <section className='bg-white overflow-hidden section'>
             <div className='flex-center flex-col py-5 gap-2'>
                 <h1 className=' text-[1.5em] font-semibold'>
                     Introducing
