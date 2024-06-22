@@ -1,19 +1,40 @@
-import Features from "@/components/Features";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import Highlight from "@/components/Highlight";
-import HowItWorks from "@/components/HowItWorks";
-import Model from "@/components/Model";
+import Introducing from "@/components/Hero/Introducing";
+import Ios18 from "@/components/Hero/Ios18";
+import IpadOS from "@/components/Hero/IpadOS";
+import MacOS from "@/components/Hero/MacOS";
+import VisionOS from "@/components/Hero/VisionOS";
+import WatchOS11 from "@/components/Hero/WatchOS11"
+import { appleHueVideo, appleImg } from "@/utils";
+import Image from "next/image";
 
 export default function Home() {
-  return (
-    <main className="bg-black" id="root">
-      <Hero />
-      {/* <Hero/>
-      <Highlight/>
-      <Model/>
-      <Features/>
-      <HowItWorks/> */}
-    </main>
-  );
+	return (
+		<main className="" id="root">
+			<section className=' bg-black flex-center flex-col text-white h-[100vh] text-[3vmin]'>
+				<video autoPlay muted loop className='-mt-5 w-[50vmin]'>
+					<source src={appleHueVideo} />
+				</video>
+				<div className='flex-center flex-col gap-y-5 w-[80vmin]'>
+					<div className='flex-center gap-3 '>
+						<Image src={appleImg} alt='apple' width={40} height={30} className='pb-2 w-[1em]' />
+						<h1 className=' text-[1.5em] text-center font-semibold inline-block'>
+							<span className='-tracking-widest'>VWDC</span>24
+						</h1>
+					</div>
+					<p className=' text-center text-[1em] font-medium'>
+						Introducing Apple Intelligence, AI for the rest of us. And exciting updates coming with iOS 18, iPadOS 18, macOS Sequoia, watchOS 11, and visionOS 2.
+					</p>
+					<button className='text-white text-[.8em] hover:border-black border px-5 py-3 rounded-full bg-black hover:bg-white hover:text-black'>
+						Watch the keynote
+					</button>
+				</div>
+			</section>
+			<Introducing />
+			<Ios18 />
+			<IpadOS />
+			<MacOS />
+			<WatchOS11 />
+			<VisionOS />
+		</main>
+	);
 }

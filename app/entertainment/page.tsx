@@ -1,7 +1,6 @@
 import DeviceTypesList from '@/components/PageBuilder/DeviceTypesList'
 import { appleMusicVideoSrc, appleOneSVG, booksMarqueeData, fitnessMarqrueeData, fitnessVideoSrc, gameMarqueeData, gameVideoSrc, headingData, introVideoSrc, movieMarqueeData, musicMarqueeData, newsMarqueData, podcastMarqueeData, topData } from './data'
 import Image from 'next/image'
-import Marquee from 'react-fast-marquee'
 import MarqueeGen from '@/components/MarqueeGen'
 
 const page = () => {

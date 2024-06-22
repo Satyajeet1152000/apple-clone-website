@@ -1,6 +1,6 @@
 const HeadingText = ({ text }: { text: string }) => {
     return (
-        <p className=' text-xl text-gray-600 font-medium w-[35%] text-center'>
+        <p className=' text-[1em] text-gray-600 font-medium w-[80vmin] text-center'>
             {text}
         </p>
     )

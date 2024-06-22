@@ -5,7 +5,7 @@ interface MyComponentProps {
 
 const Heading: React.FC<MyComponentProps> = ({text, className}) => {
     return (
-        <h1 className='text-7xl font-semibold py-2'>
+        <h1 className='text-[3em] font-semibold py-2 text-center leading-tight'>
             <span className={`bg-gradient-to-r bg-clip-text text-transparent ${className}`}>
                 {text}
             </span>
