@@ -14,7 +14,7 @@ const page = () => {
                 <div className="relative w-full flex-center text-[.8em]">
                     <ImageCarousel margin={0}>
                         {topData.map((d:any, i:number) => (
-                            <div key={i} className='relative h-full flex-center flex-col shrink-0 hover:scale-105 transition-all ease-linear'>
+                            <div key={i} className='relative h-full flex-center flex-col shrink-0 hover:scale-105 transition-all ease-linear gap-1'>
                                 <div className=' w-[12vw] sm:w-[10vw] md:w-[8vw] lg:w-[6vw]'>
                                     <Image src={d.imgSrc} alt={`TopDataImage${i}`} className='h-[100%] w-[100%]' width={150} height={150} />
                                 </div>
@@ -191,7 +191,7 @@ const page = () => {
             </section>
 
             {/* Quick Links Section */}
-            <section className='flex flex-col text-[3vmin] gap-5'>
+            <section className='flex flex-col text-[3vmin] gap-1 py-[5vmin]'>
                 <BnGText btext='Quick Links ' gtext="" />
                 <div className='flex gap-3 ml-[10vmin] text-[.8em]'>
                     {

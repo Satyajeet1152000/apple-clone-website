@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Home() {
 	return (
-		<main className=" border-[2px] border-red-700">
+		<main>
 			<section className=' bg-black flex-center flex-col text-white h-[100vh] text-[3vmin]'>
 				<video autoPlay muted loop className='-mt-5 w-[50vmin]'>
 					<source src={appleHueVideo} />
