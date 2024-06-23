@@ -18,7 +18,14 @@ const ImageCarousel = ({ children, margin=24 }: ImageCarouselProps) => {
     useEffect(() => {
         const checkScrollPresence = () => {
             if (cRef.current) {
-                setScrollPresence(cRef.current.scrollWidth > cRef.current.clientWidth);
+                const s = cRef.current.scrollWidth > cRef.current.clientWidth
+                setScrollPresence(s);
+
+                if (s! && (cRef.current && cRef.current.firstChild)) {
+                    (cRef.current.firstChild as HTMLElement).classList.add('ml-[10vmin]'); 
+                    (cRef.current.lastChild as HTMLElement).classList.add('mr-[10vmin]'); 
+                }
+
             }
         };
 
@@ -28,7 +35,7 @@ const ImageCarousel = ({ children, margin=24 }: ImageCarouselProps) => {
         return () => {
             window.removeEventListener('resize', checkScrollPresence);
         };
-    }, []);
+    }, [children.length]);
 
     const scroll = (dir: number) => {
         const eleWidth = cRef.current!.scrollWidth / children.length
@@ -37,33 +44,25 @@ const ImageCarousel = ({ children, margin=24 }: ImageCarouselProps) => {
     };
 
     return (
-        <div className="flex-center relative ">
+        <div className="flex-center">
             <div
                 ref={cRef}
-                className='flex overflow-x-scroll scroll-smooth  w-full justify-between'
+                className={`${scrollPresence? "flex": "flex-center"} overflow-x-scroll scroll-smooth  w-[100vw] py-10 gap-5`}
                 style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 onMouseEnter={() => setButtonVisible(true)}
                 onMouseLeave={() => setButtonVisible(false)}
-
-
             >
-                {children.map((child, index) => (
-                    // <div key={index} className={`flex-none ${ index===0?`ml-${margin}`: ""} ${index===children.length-1? `mr-${margin}`: ""} `}>
-                    <div key={index} className={`flex-none ${index===0 ? mLeft : ""} ${index===(children.length-1)? mRight: ""}`} >
-                        {child}
-                    </div>
-                ))}
+                {children}
             </div>
-
             {
                 scrollPresence &&
                 <>
                     <button
-                        className={`${buttonVisible ? "flex-center" : "hidden"} hover:flex-center h-14 w-14 bg-gray-300/75 hover:bg-slate-100 rounded-full hover:text-black absolute left-0 m-10 text-2xl text-gray-500 hover:border border-black`}
+                        className={`${buttonVisible ? "flex-center" : "hidden"} hover:flex-center h-14 w-14 bg-gray-300/75 hover:bg-slate-100 rounded-full hover:text-black absolute left-3 text-2xl text-gray-500 hover:border border-black`}
                         onClick={() => scroll(-1)}
                     >{"<"}</button>
                     <button
-                        className={`${buttonVisible ? "flex-center" : "hidden"} hover:flex-center h-14 w-14 bg-gray-300 hover:bg-slate-100 rounded-full hover:text-black absolute right-0 m-10 text-2xl text-gray-500 hover:border border-black`}
+                        className={`${buttonVisible ? "flex-center" : "hidden"} hover:flex-center h-14 w-14 bg-gray-300 hover:bg-slate-100 rounded-full hover:text-black absolute right-5 text-2xl text-gray-500 hover:border border-black`}
                         onClick={() => scroll(1)}
                     >{">"}</button>
                 </>

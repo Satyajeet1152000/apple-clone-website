@@ -14,7 +14,7 @@ const WatchOS11 = () => {
                 />
                 <Button text='Explore the preview' />
             </div>
-            <div className='flex-center bbr'>
+            <div className='flex-center'>
             {watchOSImgs.map((imgSrc, i)=>(
                 <Image
                     key={i}

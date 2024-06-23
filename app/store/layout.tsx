@@ -5,25 +5,23 @@ import Link from "next/link";
 
 export default function DashboardLayout({ children, }: { children: React.ReactNode }) {
     return (
-        <main className=" bg-[#f5f5f7] flex-center flex-col">
-            <section className='w-full flex mt-28'>                
-                <div className=' flex justify-between w-full mx-28 pb-14'>
-                    <BnGText
-                        classname={"w-[50%] text-6xl font-semibold"} btext="Store. " gtext="The best way to buy the products you love."
-                    />
-                    <div className='flex flex-col gap-y-3'>
-                        <div className='flex gap-x-3'>
-                            <Image src={userImg} alt='user' width={45} height={35} />
+        <main className=" bg-[#f5f5f7] w-[100%]">
+            <section className='w-full text-[3vmin] h-max py-[5vmin] gap-[5vmin]'>                
+                <div className=' flex flex-col items-start lg:items-center lg:flex-row lg:justify-between mt-24'>
+                    <BnGText btext="Store. " gtext="The best way to buy the products you love." classname={'lg:text-[1.7em]'} />
+                    <div className=' text-[.7em] ml-[10vmin] lg:mr-[10vmin] text-nowrap space-y-5'>
+                        <div className='flex lg:flex-center gap-x-3'>
+                            <Image src={userImg} alt='user' width={100} height={100} className="w-[3vw] h-[3vw]" quality={100}/>
                             <div>
                                 <h1>Need shopping help?</h1>
-                                <Link href={""} className='text-blue hover:underline'>Ask a Specialist</Link>
+                                <Link href={""} className='text-blue hover:underline'>Ask a Specialist {">"}</Link>
                             </div>
                         </div>
-                        <div className='flex gap-x-3'>
-                            <Image src={storeImg} alt='store' width={40} height={35} />
+                        <div className='flex lg:flex-center gap-x-3'>
+                            <Image src={storeImg} alt='store' width={100} height={100} className="w-[3vw] h-[3vw]" quality={100}/>
                             <div>
                                 <h1>Need shopping help?</h1>
-                                <Link href={""} className='text-blue hover:underline'>Ask a Specialist{">"}</Link>
+                                <Link href={""} className='text-blue hover:underline'>Ask a Specialist {">"}</Link>
                             </div>
                         </div>
                     </div>

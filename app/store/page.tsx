@@ -3,40 +3,46 @@ import { accessoriesData, appleExpirenceData, helpIsHereData, loudAndClearData, 
 import BnGText from '@/components/BnGText'
 import ImageCarousel from '@/components/ImageCarousel'
 import Button from '@/components/Button'
+import DeviceTypesList from '@/components/PageBuilder/DeviceTypesList'
 
 const page = () => {
     return (
         <>
             {/* Types device listing Section */}
-            <section className='mx-28 pb-16'>
-                <ImageCarousel margin={0}>
-                    {topData.map((data, i) => (
-                        <div key={i} className='flex-center flex-col font-medium hover:scale-105 transition-all ease-linear'>
-                            <Image src={data.imgPath} alt={`TopDataImage${i}`} width={150} height={100} />
-                            <h1>{data.title}</h1>
-                        </div>
-                    ))}
-                </ImageCarousel>
+            {/* <DeviceTypesList data={topData} /> */}
+            <section className="section">
+                <div className="relative w-full flex-center text-[.8em]">
+                    <ImageCarousel margin={0}>
+                        {topData.map((d:any, i:number) => (
+                            <div key={i} className='relative h-full flex-center flex-col shrink-0 hover:scale-105 transition-all ease-linear'>
+                                <div className=' w-[12vw] sm:w-[10vw] md:w-[8vw] lg:w-[6vw]'>
+                                    <Image src={d.imgSrc} alt={`TopDataImage${i}`} className='h-[100%] w-[100%]' width={150} height={150} />
+                                </div>
+                                <h1 className='text-center w-full'>{d.title}</h1>
+                            </div>
+                        ))}
+                    </ImageCarousel>
+                </div>
             </section>
 
             {/* The Latest Section */}
-            <section className='py-10'>
-                <div className=''>
-                    <BnGText btext='The latest.' gtext="Take a look at what's new, right now." classname=' mx-28 mb-10 font-semibold text-3xl' />
-                    <div className=' relative '>
+            <section className='section'>
+                <div>
+                    <BnGText btext='The latest.' gtext="Take a look at what's new, right now." />
+                    <div className=' relative text-[.8em]'>
                         <ImageCarousel margin={24}>
                             {theLatestData.map((data, i) => (
-                                <div key={i} className='relative h-full scale-95 shrink-0 hover:scale-100 transition-all ease-linear'>
-                                    <div className={`text-${data.color} absolute m-6 flex flex-col gap-2`}>
-                                        <h1 className=''>{data.title.toUpperCase()}</h1>
-                                        <h1 className=' font-bold text-3xl'>{data.h1}</h1>
-                                        <h1 className=''>
+                                <div key={i} className='imgCarousel relative'>
+                                    <div className={`text-${data.color} absolute m-[1vmin] flex flex-col gap-2`}>
+                                        <h1>{data.title.toUpperCase()}</h1>
+                                        <h1 className=' font-bold text-[1.5em]'>{data.h1}</h1>
+                                        <h1>
                                             {
                                                 data.monthlyInstallment ? ("From " + data.price + "or " + data.monthlyInstallment) : data.price
                                             }
                                         </h1>
                                     </div>
-                                    <Image className='rounded-2xl shadow-xl' src={data.imgSrc} alt={`theLatestImage${i}`} width={500} height={400} />
+                                    <Image className='rounded-2xl shadow-xl w-[45vmin]' src={data.imgSrc} alt={`theLatestImage${i}`} width={500} height={400}/>
                                 </div>
                             ))}
                         </ImageCarousel>
@@ -45,18 +51,18 @@ const page = () => {
             </section>
 
             {/* Help is Here Section */}
-            <section className='py-10'>
-                <div className=''>
-                    <BnGText btext='Help is here.' gtext=" Whenever and however you need it." classname=' mx-28 mb-5 font-semibold text-3xl' />
-                    <div className=''>
+            <section className='section'>
+                <div>
+                    <BnGText btext='Help is here.' gtext=" Whenever and however you need it."/>
+                    <div>
                         <ImageCarousel margin={24}>
                             {helpIsHereData.map((data, i) => (
-                                <div key={i} className='relative h-full scale-95 shrink-0 hover:scale-100 transition-all ease-linear'>
+                                <div key={i} className='imgCarousel relative'>
                                     <div className={`absolute m-6 flex flex-col gap-2`}>
-                                        <h1 className={`${data.titleBold ? "font-semibold text-3xl" : ""}`}>{data.title.toUpperCase()}</h1>
-                                        <h1 className={`${data.desBold ? "font-semibold text-3xl" : "text-xl"}`}>{data.description}</h1>
+                                        <h1 className={`${data.titleBold ? "font-semibold text-[1em]" : "text-[.8em]"}`}>{data.title.toUpperCase()}</h1>
+                                        <h1 className={`${data.desBold ? "font-semibold text-[1em]" : "text-[.8em]"}`}>{data.description}</h1>
                                     </div>
-                                    <Image className='rounded-3xl shadow-xl' src={data.imgSrc} alt={`theLatestImage${i}`} width={550} height={500} />
+                                    <Image className='rounded-3xl shadow-xl w-[50vmin]' src={data.imgSrc} alt={`theLatestImage${i}`} width={550} height={500} />
                                 </div>
                             ))}
                         </ImageCarousel>
@@ -65,17 +71,17 @@ const page = () => {
             </section>
 
             {/* The Apple Store Difference Section */}
-            <section className='mt-10 w-[100vw]'>
-                <div className='py-10'>
-                    <BnGText btext='The Apple Store difference. ' gtext=" Even more reasons to shop with us." classname=' mx-28 mb-5 font-semibold text-3xl' />
+            <section className='section'>
+                <div >
+                    <BnGText btext='The Apple Store difference. ' gtext=" Even more reasons to shop with us." />
                     <div className='relative'>
                         <ImageCarousel margin={24}>
                             {theAppleStoreData.map((data, i) => (
-                                <div key={i} className='bg-white drop-shadow-xl h-full scale-95 shrink-0 flex-grow hover:scale-100 transition-all ease-linear p-5 flex flex-col gap-3 rounded-2xl'>
+                                <div key={i} className='bg-white drop-shadow-xl imgCarousel flex-grow p-5 flex flex-col gap-3 rounded-2xl'>
                                     <div>
                                         {data.icon}
                                     </div>
-                                    <div className={'text-2xl font-semibold w-96'}>
+                                    <div className={'text-[1em] font-semibold w-[45vmin]'}>
                                         {data.text}
                                     </div>
                                 </div>
@@ -86,29 +92,29 @@ const page = () => {
             </section>
 
             {/* Accessories Section */}
-            <section className='py-10'>
-                <div className=' '>
-                    <BnGText btext='Accessories.' gtext=" Father’s Day gifts for whoever you call Dad." classname=' mx-28 mb-5 font-semibold text-3xl' />
-                    <div className=''>
+            <section className='section'>
+                <div>
+                    <BnGText btext='Accessories.' gtext=" Father’s Day gifts for whoever you call Dad." />
+                    <div>
                         <ImageCarousel margin={24}>
                             {accessoriesData.map((data, i) => (
-                                <div key={i} className=' scale-95 shrink-0 hover:scale-100 transition-all ease-linear flex-center flex-col bg-white rounded-2xl drop-shadow-lg '>
+                                <div key={i} className='imgCarousel overflow-hidden flex-center flex-col bg-white rounded-2xl drop-shadow-lg text-[.8em] h-[50vh] w-[45vmin]'>
                                     {
                                         i === 0 || i === accessoriesData.length - 1
                                             ?
-                                            <div className='relative flex h-[30rem]'>
+                                            <div className='relative flex h-max w-full'>
                                                 <Image className='rounded-2xl' src={data.imgPath} alt={`theLatestImage${i}`} width={350} height={400} />
                                                 <div className={`absolute p-6 flex flex-col gap-5 justify-between w-full`}>
                                                     <h1 className="">{data.title.toUpperCase()}</h1>
-                                                    <h1 className="font-semibold text-3xl">{data.description}</h1>
+                                                    <h1 className="font-semibold text-[1.2em]">{data.description}</h1>
                                                 </div>
                                             </div>
                                             :
-                                            <div className='h-[30rem] flex-center flex-col'>
-                                                <Image className='' src={data.imgPath} alt={`theLatestImage${i}`} width={350} height={400} />
+                                            <div className='flex-center flex-col h-max w-full'>
+                                                <Image src={data.imgPath} alt={`theLatestImage${i}`} width={300} height={400} />
                                                 <div className={`p-6 flex flex-col gap-5 justify-between w-full`}>
-                                                    <h1 className="text-md font-semibold">{data.title.toUpperCase()}</h1>
-                                                    <h1 className={``}>{data.price}</h1>
+                                                    <h1 className=" text-[1.2em] font-semibold">{data.title.toUpperCase()}</h1>
+                                                    <h1>{data.price}</h1>
                                                 </div>
                                             </div>
                                     }
@@ -120,32 +126,21 @@ const page = () => {
             </section>
 
             {/* Loud and Clear */}
-            <section className='mt-10 w-[100vw]'>
-                <div className='py-10'>
-                    <BnGText btext='Loud and clear. ' gtext="Unparalleled choices for rich, high-quality sound." classname=' mx-28 mb-5 font-semibold text-3xl' />
-                    <div className='relative'>
+            <section className='section'>
+                <div>
+                    <BnGText btext='Loud and clear. ' gtext="Unparalleled choices for rich, high-quality sound."/>
+                    <div >
                         <ImageCarousel margin={24}>
                             {loudAndClearData.map((data, i) => (
-                                <div key={i} className=' scale-95 shrink-0 hover:scale-100 transition-all ease-linear flex-center flex-col bg-white rounded-2xl drop-shadow-lg '>
-                                    {
-                                        i === 0
-                                            ?
-                                            <div className='relative flex h-[30rem]'>
-                                                <Image className='rounded-2xl' src={data.imgPath} alt={`theLatestImage${i}`} width={350} height={400} />
-                                                <div className={`absolute p-6 flex flex-col gap-5 justify-between w-full`}>
-                                                    <h1 className="font-semibold text-3xl">{data.name}</h1>
-                                                    <h1 className="">{data.price}</h1>
-                                                </div>
-                                            </div>
-                                            :
-                                            <div className='h-[30rem] flex-center flex-col'>
-                                                <Image className='' src={data.imgPath} alt={`theLatestImage${i}`} width={350} height={400} />
-                                                <div className={`p-6 flex flex-col gap-5 justify-between w-full`}>
-                                                    <h1 className="text-md font-semibold">{data.name}</h1>
-                                                    <h1 className={``}>{data.price}</h1>
-                                                </div>
-                                            </div>
-                                    }
+                                <div key={i} className='imgCarousel flex-center flex-col bg-white rounded-2xl drop-shadow-lg text-[.65em] h-max'>
+                                    <div className='h-full flex-center flex-col overflow-hidden'>
+                                        <Image src={data.imgPath} alt={`theLatestImage${i}`} width={350} height={400} className='w-[40vmin] h-full' />
+                                        
+                                        <div className={`p-6 flex flex-col gap-5 justify-between w-full`}>
+                                            <h1 className="text-[1.2em] font-semibold">{data.name}</h1>
+                                            <h1 className={``}>{data.price}</h1>
+                                        </div>
+                                    </div>
                                 </div>
                             ))}
                         </ImageCarousel>
@@ -154,19 +149,19 @@ const page = () => {
             </section>
 
             {/* The Apple expireince Section */}
-            <section className='py-10'>
-                <div className=''>
-                    <BnGText btext='The Apple experience. ' gtext=" Do even more with Apple products and services." classname=' mx-28 mb-5 font-semibold text-3xl' />
-                    <div className=''>
+            <section className='section'>
+                <div>
+                    <BnGText btext='The Apple experience. ' gtext=" Do even more with Apple products and services." />
+                    <div>
                         <ImageCarousel margin={24}>
                             {appleExpirenceData.map((data, i) => (
-                                <div key={i} className='relative h-full scale-95 shrink-0 hover:scale-100 transition-all ease-linear'>
+                                <div key={i} className='imgCarousel relative text-[.8em]'>
                                     <div className={`absolute m-6 flex flex-col gap-2 ${i === 0 ? 'text-white' : ''}`}>
                                         <h1 >{data.title}</h1>
-                                        <h1 className="text-3xl font-semibold">{data.linkText}</h1>
+                                        <h1 className="text-[1.3em] font-semibold">{data.linkText}</h1>
                                         <h1 >{data.description}</h1>
                                     </div>
-                                    <Image className='rounded-3xl shadow-xl' src={data.imgPath} alt={`theLatestImage${i}`} width={550} height={500} />
+                                    <Image className='rounded-3xl shadow-xl w-[60vmin]' src={data.imgPath} alt={`theLatestImage${i}`} width={550} height={500} />
                                 </div>
                             ))}
                         </ImageCarousel>
@@ -175,19 +170,19 @@ const page = () => {
             </section>
 
             {/* Special Store Section */}
-            <section className='py-10'>
-                <div className=''>
-                    <BnGText btext='Special stores. ' gtext="Exclusive savings for education, businesses, and more." classname=' mx-28 mb-5 font-semibold text-3xl' />
-                    <div className=''>
+            <section className='section'>
+                <div>
+                    <BnGText btext='Special stores. ' gtext="Exclusive savings for education, businesses, and more." />
+                    <div>
                         <ImageCarousel margin={24}>
                             {specialStoreData.map((data, i) => (
-                                <div key={i} className='relative h-full scale-95 shrink-0 hover:scale-100 transition-all ease-linear flex'>
+                                <div key={i} className='imgCarousel relative flex text-[.8em]'>
                                     <div className={`absolute m-6 flex flex-col gap-2 ${i === 2 ? 'text-white' : ''}`}>
                                         <h1 >{data.title}</h1>
-                                        <h1 className="text-3xl font-semibold">{data.linkText}</h1>
+                                        <h1 className="text-[1.2em] font-semibold">{data.linkText}</h1>
                                         <h1 >{data.description}</h1>
                                     </div>
-                                    <Image className='rounded-3xl shadow-xl' src={data.imgPath} alt={`theLatestImage${i}`} width={500} height={500} />
+                                    <Image className='rounded-3xl shadow-xl w-[60vmin]' src={data.imgPath} alt={`theLatestImage${i}`} width={500} height={500} />
                                 </div>
                             ))}
                         </ImageCarousel>
@@ -196,16 +191,14 @@ const page = () => {
             </section>
 
             {/* Quick Links Section */}
-            <section className='py-10 w-full'>
-                <div className='mx-28'>
-                <BnGText btext='Quick Links ' gtext="" classname=' mb-5 font-semibold text-3xl' />
-                <div className='flex gap-3'>
+            <section className='flex flex-col text-[3vmin] gap-5'>
+                <BnGText btext='Quick Links ' gtext="" />
+                <div className='flex gap-3 ml-[10vmin] text-[.8em]'>
                     {
                         ["Order Status", "Shopping Help", "Returns", "Your Saves"].map((item, i)=>(
                             <Button key={i} text={item}/>
                         ))
                     }
-                </div>
                 </div>
             </section>
 

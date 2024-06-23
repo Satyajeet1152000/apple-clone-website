@@ -25,7 +25,7 @@ const Navbar = () => {
 
 
     return (
-        <header className={`w-full fixed top-0 z-10 bg-black text-gray-200`}
+        <header className={`w-[100%] fixed top-0 z-10 bg-black text-gray-200`}
             id='navbar'
         >
             <nav className='w-full py-3 px-5 h-full flex items-center justify-between xl:justify-center gap-5 xl:gap-20 2xl:gap-28'>
@@ -66,7 +66,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <div className={` ${mobileNav?"hidden": "flex"} items-center py-5 gap-5 lg:hidden flex-col h-[100vh] text-3xl backdrop-blur-md`}>
+            <div className={` ${mobileNav?"hidden": "flex"} items-center py-5 gap-5 lg:hidden flex-col h-[100vh] text-[3vh] backdrop-blur-md`}>
                 {
                     navLists.map((nav, i) => (
                         <Link
