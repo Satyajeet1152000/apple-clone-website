@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 
 const Helper = () => {
-    const [dim, setDim] = useState({ width: window.innerWidth, height: window.innerHeight })
+    const [dim, setDim] = useState({ width: 0, height: 0 })
     useEffect(() => {
         const updateDim = () => {
             setDim({ width: window.innerWidth, height: window.innerHeight })
