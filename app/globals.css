@@ -22,7 +22,7 @@ html, body {
   }
 
   .imgCarousel {
-    @apply shrink-0 hover:scale-105 transition-all ease-linear
+    @apply shrink-0 hover:scale-105 hover:cursor-pointer transition-all ease-linear duration-75
   }
 
   .bbw {

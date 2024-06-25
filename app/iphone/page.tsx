@@ -18,7 +18,7 @@ const page = () => {
             <GetToKnow heading="Get to Know iPhone." data={getToKnowData} />
             <ExploreLineup heading="Explore the lineup." data={exploreLineupData} style={exploreLineupDataStyle} />
             <WhyAppleIsBest heading="Why Apple is the best place to buy iPhone." data={whyAppleBestData} />
-            <SigniFicantOthers heading="Significant others." data={significantOtherData} />
+            {/* <SigniFicantOthers heading="Significant others." data={significantOtherData} /> */}
             <Essentials heading="iPhone essentials." data={macEssentialsData} updown={false} />
         </>
     )

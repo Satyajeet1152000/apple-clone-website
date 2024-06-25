@@ -109,12 +109,12 @@ export const exploreLineupData = [
         colors: ["#e3e4e5", "#2e2c2e"],
         model: {
             name: "iPad Pro",
-            info: "The ultimate iPad experience with the most advanced technology.",
+            info: <span>The ultimate iPad experience with<br/> the most advanced technology.</span>,
         },
         price: "From $999 or $83.25/mo. for 12 mo.",
         display: {
             size: "13″ or 11″",
-            info: <span >Ultra Retina XDR display <br/> ProMotion technology <br/>P3 wide color<br/>Nano-texture display glass option on 1TB and 2TB models </span>,
+            info: <span >Ultra Retina XDR display <br/> ProMotion technology <br/>P3 wide color<br/>Nano-texture display glass option on<br/> 1TB and 2TB models </span>,
         },
         cameraInfo: [
             {
@@ -123,7 +123,7 @@ export const exploreLineupData = [
             },
             {
                 imgSrc: "https://www.apple.com/v/ipad/home/ck/images/overview/select/ipad_front_camera_landscape__dl3oc157n50m_large.png",
-                info: <span>Landscape 12MP Ultra Wide front camera TrueDepth camera system<br/></span>
+                info: <span>Landscape 12MP Ultra Wide<br/> front camera TrueDepth camera system<br/></span>
             },
         ],
         pencil: {
@@ -144,12 +144,12 @@ export const exploreLineupData = [
         colors: ["#e5e0d8", "#d7e5e6", "#262335", "#6b696e"],
         model: {
             name: "iPad Air",
-            info: "Serious performance in a thin and light design.",
+            info: <span>Serious performance in a<br/> thin and light design.</span>,
         },
         price: "From $599 or $49.91/mo. for 12 mo.",
         display: {
             size: "13″ or 11″",
-            info: <span>Liquid Retina display <br/>P3 wide color<br/>Measured diagonally as a rectangle, the 13‑inch iPad Air is 12.9 inches, and the 11‑inch iPad Air is 10.86 inches. Actual viewable area is less.</span>,
+            info: <span>Liquid Retina display <br/>P3 wide color<br/>Measured diagonally as a rectangle,<br/>13‑inch iPad Air is 12.9 inches,<br/> and the 11‑inch iPad Air is 10.86 inches.<br/> Actual viewable area is less.</span>,
         },
         cameraInfo: [
             {
@@ -179,7 +179,7 @@ export const exploreLineupData = [
         colors: ["#e3e4e5", "#6480a3", "#de6274", "#f0d95b"],
         model: {
             name: "iPad",
-            info: "The colorful, all‑screen iPad for the things you do every day.",
+            info: <span>The colorful, all‑screen iPad<br/> for the things you do every day.</span>,
         },
         price: "From $349  or $29.08/mo. for 12 mo.",
         display: {
@@ -214,7 +214,7 @@ export const exploreLineupData = [
         colors: ["#e3dcd1", "#e8d1cf", "#b9b8d1", "#6b696e"],
         model: {
             name: "iPad mini",
-            info: "The full iPad experience in an ultraportable design.",
+            info: <span>The full iPad experience in an<br/>ultraportable design.</span>,
         },
         price: "From $499 or $41.58/mo. for 12 mo.",
         display: {
@@ -237,7 +237,7 @@ export const exploreLineupData = [
         },
         keyboard: {
             imgSrc: "https://www.apple.com/v/ipad/home/ck/images/overview/select/magickeyboard_m4_ipad__ef4asgi8mvyq_large.png",
-            info: "Supports Magic Keyboard for iPad Pro (M4)" 
+            info: <span>Supports Magic Keyboard<br/> for iPad Pro (M4)</span> 
         },
         chip: {
             imgSrc: "https://www.apple.com/v/ipad/home/ck/images/overview/select/icon_chip_a15__dsg22feqeiuu_large.png",

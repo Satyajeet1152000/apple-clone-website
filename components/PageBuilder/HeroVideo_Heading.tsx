@@ -1,12 +1,10 @@
-import React from 'react'
-
 const HeroVideo_Heading = ({heading, videoSrc}:{heading:any, videoSrc:string}) => {
   return (
     <section className=''>
       {/* Heading */}
-      <div className='mx-24 my-10 flex justify-between items-center font-semibold '>
-        <h1 className=' text-6xl'>{heading[0]}</h1>
-        <h1 className='text-3xl'>
+      <div className='mx-[10vmin] my-10 flex flex-col md:flex-row justify-between font-semibold gap-2'>
+        <h1 className=' text-5xl'>{heading[0]}</h1>
+        <h1 className='text-2xl leading-none'>
           {heading[1]}
         </h1>
       </div>

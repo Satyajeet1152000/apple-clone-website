@@ -3,13 +3,11 @@ import { accessoriesData, appleExpirenceData, helpIsHereData, loudAndClearData, 
 import BnGText from '@/components/BnGText'
 import ImageCarousel from '@/components/ImageCarousel'
 import Button from '@/components/Button'
-import DeviceTypesList from '@/components/PageBuilder/DeviceTypesList'
 
 const page = () => {
     return (
         <>
             {/* Types device listing Section */}
-            {/* <DeviceTypesList data={topData} /> */}
             <section className="section">
                 <div className="relative w-full flex-center text-[.8em]">
                     <ImageCarousel margin={0}>

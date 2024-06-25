@@ -45,7 +45,7 @@ export const topData = [
     }
 ]
 
-export const bannerDate = { text: "Buy Mac with education savings.", linkText: "Shop now >" }
+export const bannerDate = { text: "Now through 9/30, get a gift card up to $150 when you buy Mac or iPad with education savings.", linkText: "Shop now >" }
 export const headingData = ["Mac", <span key="video heading">If you can dream it,<br/> Mac can do it.</span>]
 
 export const introVideo = "https://www.apple.com/105/media/us/mac/family/2024/60fc0159-4236-4a03-8534-f5ba07e538c5/anim/welcome/large.mp4#t=3.323202"
@@ -110,7 +110,7 @@ export const getToKnowData = [
 ]
 
 export const exploreLineupDataStyle = {
-    width: '100%',
+    width: '25vmax',
     height: 'auto',
 }
 
