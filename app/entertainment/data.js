@@ -35,7 +35,7 @@ export const topData = [
 
 export const headingData = {
     title: <span>Meet the A-list of <br />entertainment.</span>,
-    des: <span>Award‑winning movies. Binge‑worthy shows. Your favorite music mastered in<br />Spatial Audio. The most epic collection of mobile games. And the world’s largest<br />library of 4K Ultra HD fitness content. The best entertainment and experiences<br />live here — only on Apple.</span>
+    des: <span>Award‑winning movies. Binge‑worthy shows. Your favorite music mastered in Spatial Audio. The most epic collection of mobile games. And the world’s largest library of 4K Ultra HD fitness content. The best entertainment and experiences live here - only on Apple.</span>
 }
 
 export const introVideoSrc = "https://www.apple.com/105/media/us/services/2023/4757c394-0f2b-4ec2-888b-7a24de67705c/anim/hero-sizzle/large.mp4"
