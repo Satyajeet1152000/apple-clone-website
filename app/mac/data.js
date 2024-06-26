@@ -224,7 +224,7 @@ export const exploreLineupData = [
         imgSrc: "https://www.apple.com/v/mac/home/bz/images/overview/select/product_tile_mac_pro__6q3qt8073f6e_large.png",
         model: {
             name: "Mac Pro",
-            info: "A pro workstation with PCIe expansion for demanding workflows.",
+            info: "A pro workstation for demanding workflows.",
             chipInfo: "A pro workstation with PCIe expansion for demanding workflows."
         },
         price: "From $6999 or $583.25/mo. for 12 mo.",
