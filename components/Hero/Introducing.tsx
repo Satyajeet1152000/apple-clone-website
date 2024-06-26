@@ -20,17 +20,52 @@ const Introducing = () => {
                 <Button text='Explore the preview' />
             </div>
             <div className=' overflow-hidden flex-center w-full px-[5vmin] gap-[5vmin]'>
-                {introAiImgs.map((imgSrc, i) => (
-                    <div key={i} className={`w-[${i <= ((introAiImgs.length - 1) / 2) ? (m * (i + j)) : (m * ((introAiImgs.length - 1 - i) + j))}%]`}>
-                        <Image
-                            src={imgSrc}
-                            alt={`ai_${i + 1}`}
-                            height={200}
-                            width={1000}
-                            className='w-full h-full'
-                        />
-                    </div>
-                ))}
+                <div className="">
+                    <Image
+                        src={introAiImgs[0]}
+                        alt={`ai_images`}
+                        height={200}
+                        width={1000}
+                        className='w-full h-full'
+                    />
+                </div>
+                <div className="">
+                    <Image
+                        src={introAiImgs[1]}
+                        alt={`ai_images`}
+                        height={200}
+                        width={1000}
+                        className='w-full h-full'
+                    />
+                </div>
+                <div className="">
+                    <Image
+                        src={introAiImgs[2]}
+                        alt={`ai_images`}
+                        height={200}
+                        width={1000}
+                        className='w-full h-full'
+                    />
+                </div>
+                <div className="">
+                    <Image
+                        src={introAiImgs[3]}
+                        alt={`ai_images`}
+                        height={200}
+                        width={1000}
+                        className='w-full h-full'
+                    />
+                </div>
+                <div className="">
+                    <Image
+                        src={introAiImgs[4]}
+                        alt={`ai_images`}
+                        height={200}
+                        width={1000}
+                        className='w-full h-full'
+                    />
+                </div>
+
             </div>
         </section>
     )
