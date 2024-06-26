@@ -19,18 +19,20 @@ const Introducing = () => {
                 <HeadingText text='The next big step for Apple is here. Apple Intelligence is personal intelligence built into your iPhone, iPad, and Mac to help you write, express yourself, and get things done effortlessly.1 All while setting a brand-new standard for privacy in AI.' />
                 <Button text='Explore the preview' />
             </div>
-            <div className='flex-center gap-x-5 w-[80vmax]'>
-                {introAiImgs.map((imgSrc, i) => (
-                    <div key={i} className={`w-[${i <= ((introAiImgs.length - 1) / 2) ? (m * (i + j)) : (m * ((introAiImgs.length - 1 - i) + j))}%]`}>
-                        <Image
-                            src={imgSrc}
-                            alt={`ai_${i + 1}`}
-                            height={200}
-                            width={1000}
+            <div className=' overflow-hidden flex-center w-full px-[5vmin] '>
+                <div className='flex-center gap-x-5 w-full h-[30vw] pt-[20vw]'>
+                    {introAiImgs.map((imgSrc, i) => (
+                        <div key={i} className={`w-[${i <= ((introAiImgs.length - 1) / 2) ? (m * (i + j)) : (m * ((introAiImgs.length - 1 - i) + j))}%]`}>
+                            <Image
+                                src={imgSrc}
+                                alt={`ai_${i + 1}`}
+                                height={200}
+                                width={1000}
 
-                        />
-                    </div>
-                ))}
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     )
