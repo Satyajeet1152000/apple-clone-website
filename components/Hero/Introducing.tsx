@@ -28,7 +28,7 @@ const Introducing = () => {
                                 alt={`ai_${i + 1}`}
                                 height={200}
                                 width={1000}
-
+                                className='w-full h-full'
                             />
                         </div>
                     ))}
