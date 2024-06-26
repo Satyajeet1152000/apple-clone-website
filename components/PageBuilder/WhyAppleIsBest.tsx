@@ -16,7 +16,7 @@ const WhyAppleIsBest = ({ heading, data }: { heading: string, data: any }) => {
                                     <h1 className=' text-[.9em] font-semibold'>{d.title}</h1>
                                     <h1 className='text-[.7em]'>{d.description}</h1>
                                 </div>
-                                <div className='absolute bottom-[2vmin] right-[2vmin] w-[5vmin] h-[5vmin] flex-center text-center rounded-full bg-black text-gray-200 text-[1.2em]'>+</div>
+                                <button className='absolute bottom-[2vmin] right-[2vmin] w-[5vmin] h-[5vmin] flex-center text-center rounded-full bg-black text-gray-200 text-[1.2em]'>+</button>
                             </div>
                         ))}
                     </ImageCarousel>

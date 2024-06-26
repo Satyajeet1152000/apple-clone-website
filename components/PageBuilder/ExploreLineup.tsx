@@ -3,7 +3,7 @@ import BnGText from '../BnGText'
 import ImageCarousel from '../ImageCarousel'
 import Image from 'next/image'
 
-const ExploreLineup = ({ heading, data, style, bg="white" }: { heading: string, data: any, style: any, bg?:string }) => {
+const ExploreLineup = ({ heading, data, style, bg="white" }: { heading: string, data: any, style?: any, bg?:string }) => {
     return (
         <section className='section' style={{backgroundColor: bg}}>
             <div>
